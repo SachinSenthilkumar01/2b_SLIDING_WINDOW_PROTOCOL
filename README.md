@@ -25,8 +25,10 @@ print("Frames received:", data)
 ack = "ACK for " + data 
 conn.send(ack.encode()) 
 conn.close()
+```
 
 Client Program (client.py) 
+```
 import socket 
 s = socket.socket() 
 s.connect(('localhost', 8000)) 
